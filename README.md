@@ -1,5 +1,5 @@
 # aips
 
-git add . /n
-git commit -m " promenii" /n
-git push /n
+git add . \n
+git commit -m " promenii" 
+git push 

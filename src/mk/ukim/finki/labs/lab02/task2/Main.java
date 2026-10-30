@@ -1,4 +1,4 @@
-package mk.ukim.finki.labs.lab01.task3;
+package mk.ukim.finki.labs.lab02.task2;
 
 import mk.ukim.finki.dataStructures.dll.DLL;
 import mk.ukim.finki.dataStructures.dll.DLLNode;

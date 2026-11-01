@@ -15,7 +15,7 @@ public class Main {
         }
         int last = -10;
         while(!positions.isEmpty()){
-            if(Math.abs(last - positions.peek())<=1)num--;
+            if(Math.abs(last - positions.peek())<=2)num--;
             last = positions.peek();
             positions.dequeue();
 

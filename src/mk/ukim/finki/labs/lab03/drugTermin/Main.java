@@ -24,7 +24,6 @@ class Proces{
 
 }
 
-
 public class Main {
 
     public static void main(String[] args) {
@@ -44,6 +43,7 @@ public class Main {
             }
             red.enqueue(naRed);
         }
+        int j=0;
         while(!red.isEmpty()){
             Proces naRed = red.dequeue();
             int flag = 0;
@@ -52,8 +52,15 @@ public class Main {
                 if(flag<=t)naRed.podprocesi.pop();
                 else naRed.podprocesi.peek().time -= (t-flag);
             }
-            if(!naRed.podprocesi.isEmpty())red.enqueue(naRed);
-            else System.out.println(naRed.ime);
+
+            if(!naRed.podprocesi.isEmpty()){
+                red.enqueue(naRed);
+            }
+            else {
+                j++;
+                System.out.println(j+"."+naRed.ime);
+            }
+
         }
     }
 

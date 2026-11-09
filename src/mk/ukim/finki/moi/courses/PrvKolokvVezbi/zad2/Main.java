@@ -9,7 +9,7 @@ public class Main {
         int m = sc.nextInt();
         DLL<DLL<Integer>> lista = new DLL<>();
 
-        int prod = 1;
+        long prod = 1;
         for (int i = 0; i < n; i++) {
             int sum = 0;
             DLL<Integer> podlista = new DLL<>();
